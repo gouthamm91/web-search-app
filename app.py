@@ -35,19 +35,23 @@ def homePage():
 @app.route("/search/<q>")
 def search(q):
 	# for i in search(q, num_results=5):
+	n = 0
 	for j in googlesearch.search(q, num=5):
 	# if True:
+		n = n + 1
 		url = j
-		if 'www.xvideos.com' in url:
-			url = url.replace('https://www.xvideos.com', 'https://www.xvideos2.uk')
+		if n <= 1:
+			if 'www.xvideos.com' in url:
+				url = url.replace('https://www.xvideos.com', 'https://www.xvideos2.uk')
+			else:
+				url = url.replace('https://www.pornhub.com', 'https://de.pornhub.org').replace('https://www.pornhub.org', 'https://de.pornhub.org')
+				url = url.replace('https://www.xnxx.com', 'https://xnxx115.health').replace('https://xnxx.com', 'https://xnxx115.health')
+				url = url.replace('https://www.beeg.com', 'https://beeg.onl').replace('https://beeg.com', 'https://beeg.onl')
+				url = url.replace('https://www.spankbang.com', 'https://spankbang.party').replace('https://spankbang.com', 'https://spankbang.party')
+				url = url.replace('https://www.youporn.com', 'https://you-porn.com').replace('https://www.you-porn.com', 'https://you-porn.com')
+				url = url.replace('https://www.', 'https://')
 		else:
-			url = url.replace('https://www.pornhub.com', 'https://de.pornhub.org').replace('https://www.pornhub.org', 'https://de.pornhub.org')
-			url = url.replace('https://www.xnxx.com', 'https://xnxx115.health').replace('https://xnxx.com', 'https://xnxx115.health')
-			url = url.replace('https://www.beeg.com', 'https://beeg.onl').replace('https://beeg.com', 'https://beeg.onl')
-			url = url.replace('https://www.spankbang.com', 'https://spankbang.party').replace('https://spankbang.com', 'https://spankbang.party')
-			url = url.replace('https://www.youporn.com', 'https://you-porn.com').replace('https://www.you-porn.com', 'https://you-porn.com')
-			url = url.replace('https://www.', 'https://')
-		break
+			break
 	# return "<a href=\"https://voidstars.vercel.app?url="+url+"\"><h1>Searching For => "+q+"</h1></a>"
 	return '''
 	<body onload="window.location.href = \''''+url+'''\';">
