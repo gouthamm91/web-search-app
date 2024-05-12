@@ -42,7 +42,8 @@ def search(q):
 	# if True:
 		n = n + 1
 		url = j
-		if n <= 0:
+		# if n <= 0:
+		if True:
 			if 'www.xvideos.com' in url:
 				url = url.replace('https://www.xvideos.com', 'https://www.xvideos2.uk')
 			else:
@@ -52,6 +53,7 @@ def search(q):
 				url = url.replace('https://www.spankbang.com', 'https://spankbang.party').replace('https://spankbang.com', 'https://spankbang.party')
 				url = url.replace('https://www.youporn.com', 'https://you-porn.com').replace('https://www.you-porn.com', 'https://you-porn.com')
 				url = url.replace('https://www.', 'https://')
+			break
 		else:
 			break
 	# return "<a href=\"https://voidstars.vercel.app?url="+url+"\"><h1>Searching For => "+q+"</h1></a>"
