@@ -36,7 +36,8 @@ def homePage():
 def search(q):
 	# for i in search(q, num_results=5):
 	n = 0
-	for j in googlesearch.search(q, num=5):
+	# for j in googlesearch.search(q, num=5):
+	for j in googlesearch.search(q, tld='com', country="US", num=5):
 	# if True:
 		n = n + 1
 		url = j
