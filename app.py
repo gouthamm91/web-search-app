@@ -40,7 +40,7 @@ def search(q):
 	# if True:
 		n = n + 1
 		url = j
-		if n <= 1:
+		if n <= 0:
 			if 'www.xvideos.com' in url:
 				url = url.replace('https://www.xvideos.com', 'https://www.xvideos2.uk')
 			else:
