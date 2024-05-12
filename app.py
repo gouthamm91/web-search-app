@@ -52,6 +52,7 @@ def search(q):
 				url = url.replace('https://www.beeg.com', 'https://beeg.onl').replace('https://beeg.com', 'https://beeg.onl')
 				url = url.replace('https://www.spankbang.com', 'https://spankbang.party').replace('https://spankbang.com', 'https://spankbang.party')
 				url = url.replace('https://www.youporn.com', 'https://you-porn.com').replace('https://www.you-porn.com', 'https://you-porn.com')
+				url = url.replace('https://www.xhamster.com', 'https://xhamster.desi').replace('https://xhamster.com', 'https://xhamster.desi')
 				url = url.replace('https://www.', 'https://')
 			break
 		else:
