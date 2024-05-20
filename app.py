@@ -14,9 +14,9 @@ def homePage():
 <body style="font-family: sans-serif; background-color: rgba(200, 200, 200, 1)">
 	<center>
 	<a style="font-size: 200%; font-weight: bold; color: red;">VPN</a> <a style="font-size: 200%; font-weight: bold;">KILLER</a><br>
-	<input id="inp" style="border-radius: 5px; border: 1px solid grey; font-size: 105%; padding: 3px; margin: 5px; width: 99%;" onchange="window.open('/search/'+inp.value.replace(/ /g, '+'), target='_blank');"/>
+	<input id="inp" style="border-radius: 5px; border: 1px solid grey; font-size: 105%; padding: 3px; margin: 5px; width: 99%;" onchange="if (this.value.trim() != "") {window.open('/search/'+inp.value.replace(/ /g, '+'), target='_blank');}"/>
 
-	<input type="button" style="border-radius: 5px; border: 1px solid grey; font-size: 200%;; padding: 3px; margin: 5px; width: 99.5%; height: 100px;" value="Search Now..." onclick="window.open('/search/'+inp.value.replace(/ /g, '+'), target='_blank');">
+	<input type="button" style="border-radius: 5px; border: 1px solid grey; font-size: 200%;; padding: 3px; margin: 5px; width: 99.5%; height: 100px;" value="Search Now..." onclick="if (inp.value.trim() != "") {window.open('/search/'+inp.value.replace(/ /g, '+'), target='_blank');}">
 
 	<!-- <input type="button" style="font-size: 200%; width: 175px; height: 100px; border-radius: 10px; border: 1px solid grey;" onclick="window.open('/search/'+inp.value.replace(/ /g, '+')+ '+' +this.value.toLowerCase().replace(/ /g, '+'), target='_blank');" value="PornHub"/>
 	<input type="button" style="font-size: 200%; width: 175px; height: 100px; border-radius: 10px; border: 1px solid grey;" onclick="window.open('/search/'+inp.value.replace(/ /g, '+')+ '+' +this.value.toLowerCase().replace(/ /g, '+'), target='_blank');" value="XVideos"/>
