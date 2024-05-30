@@ -9,7 +9,8 @@ def homePage():
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Searching...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="font-family: sans-serif; background-color: rgba(200, 200, 200, 1)">
 	<center>
